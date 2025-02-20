@@ -19,8 +19,8 @@ int main(void)
 
 		}
 
-		r = 65;
-		while (r <= 70)
+		r = 97;
+		while (r <= 102)
 		{
 			putchar(r);
 			r++;
