@@ -1,4 +1,4 @@
- #include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -14,7 +14,7 @@ void print_line(int n)
 	{
 		_putchar ('_');
 		i++;
- 	}
+	}
 
 	_putchar('\n');
 }
