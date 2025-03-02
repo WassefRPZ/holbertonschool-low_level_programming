@@ -1,5 +1,4 @@
 #include "main.h"
-#include "holberton.h"
 
 /**
  * *string_toupper - Converts all lowercase letters of a string to uppercase.
