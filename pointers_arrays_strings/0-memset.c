@@ -1,12 +1,11 @@
 #include "main.h"
-/*
- * *_memset - Remplie une zone memoire avec une valeur donnee.
+/**
+ * _memset - Remplie une zone mémoire avec un certain caractère.
+ * @s: Pointeur vers la zone mémoire à remplir.
+ * @b: Caractère avec lequel remplir la zone mémoire.
+ * @n: Nombre de fois à remplir la zone mémoire.
  *
- * @s: Pointeur vers la zone memoire a remplir.
- * @c: Valeur à remplir dans la zone memoire (convertie en unsigned char).
- * @n: Nombre de bytes a remplir.
- *
- * Retourne le pointeur vers la zone memoire initiale @s.
+ * Return: Retourne le pointeur vers la zone mémoire modifiée.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
