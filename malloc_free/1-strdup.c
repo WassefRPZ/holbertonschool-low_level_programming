@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * _strdup - Cree une copie d'une chaine de caracteres.
+ * @str: Chaine a copier.
+ *
+ * Return: Pointeur vers la nouvelle chaine, ou NULL en cas d'erreur.
+ */
 char *_strdup(char *str)
 {
 	int i = 0;
@@ -18,7 +23,7 @@ char *_strdup(char *str)
 	if (!mano)
 	return (NULL);
 
-	while ( str[i] != '\0')
+	while (str[i] != '\0')
 	{
 	mano[i] = str[i];
 	i++;
@@ -26,5 +31,5 @@ char *_strdup(char *str)
 
 	mano[i] = '\0';
 
-	return ( mano);
+	return (mano);
 }
