@@ -13,6 +13,9 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *mano;
+	unsigned int i;
+	unsigned char *wassef;
+
 
 	if (nmemb == 0 || size == 0)
 	return (NULL);
@@ -21,7 +24,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (mano == NULL)
 	return (NULL);
 
-	memset(mano, 0, nmemb * size);
+
+
+	wassef = (unsigned char *)mano;
+	for (i = 0; i < (nmemb * size); i++)
+		wassef[i] = 0;
 	return (mano);
 
 }
