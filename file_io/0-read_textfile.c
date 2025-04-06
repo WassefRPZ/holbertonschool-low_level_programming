@@ -3,14 +3,15 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "main.h"
-/**
-* read_textfile - Lit un fichier texte et l'imprime sur la sortie standard
-* @filename: Nom du fichier à lire
-* @letters: Nombre de lettres à lire et imprimer
-*
-* Return: Nombre de lettres lues et imprimées, 0 en cas d'échec
-*/
 
+/**
+ * read_textfile - Reads a text file and prints it to the POSIX standard output.
+ * @filename: The name of the file to read.
+ * @letters: The number of letters to read and print.
+ *
+ * Return: The actual number of letters it could read and print,
+ *         or 0 if the file cannot be opened, read, or if malloc fails.
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
